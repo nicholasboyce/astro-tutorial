@@ -1,7 +1,24 @@
 ---
 import Social from "./Social.astro";
+const socials = [{
+    platform: 'Github',
+    username: 'nicholasboyce'
+}, {
+    platform: 'FrontEnd Mentor',
+    username: 'nicholasboyce'
+}, {
+    platform: 'LinkedIn',
+    username: 'nicholasboyce'
+}];
 ---
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+</style>
 
 <footer>
-  <p>Learn more about my projects on <Social platform="github" username="nicholasboyce">!</p>
+  {socials.map((media) => <Social platform={media.platform} username={media.username} />)}
 </footer>
