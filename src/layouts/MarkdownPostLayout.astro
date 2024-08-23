@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import TagList from "../components/TagList.astro";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
@@ -15,4 +16,5 @@ const { frontmatter } = Astro.props;
         <p>Written by {frontmatter.author}</p>
         <slot />
     </article>
+    <TagList />
 </BaseLayout>
