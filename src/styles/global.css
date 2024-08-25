@@ -1,5 +1,5 @@
 html {
-    transition: background-color 1s ease;
+    /* transition: background-color 1s ease; */
     background-color: rgb(246, 233, 232);
     font-family: sans-serif;
 }
